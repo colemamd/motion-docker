@@ -15,6 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Setup Docker buildx
+      id: buildx
+      uses: crazy-max/ghaction-docker-buildx@v3
+      with:
+        buildx-version: latest
+        qemu-version: latest
     - name: Build the Docker image
-      run: docker buildx build .  --file Dockerfile --tag colemamd/motion-docker:latest --platform linux/arm/v7
+      run: docker buildx build .  --file Dockerfile --tag colemamd/motion-docker:latest --platform linux/arm/v6,linux/arm/v7,linux/arm64,linux/amd64
