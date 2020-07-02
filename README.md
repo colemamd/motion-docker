@@ -1,3 +1,10 @@
+Based on the motion project from [here](https://github.com/Motion-Project/motion/releases). This is a modified version of the [motion-docker](https://github.com/Motion-Project/motion-docker) project. It has been updated to use Ubuntu 20.04 base. Example config files are also included. 
+
+### Config files
+The motion.conf file establishes global parameters that apply to all cameras and separate camera.conf files that specify the parameters that apply to each camera. The camera.conf files are specified at the bottom of the motion.conf file. The container includes a default config file, motion-dist.conf. More info can be found [here](https://motion-project.github.io/motion_config.html#configfiles). 
+
+The original README is quoted below. For this build, replace motionproject/motion:latest with colemamd/motion-docker:latest.
+
 # motion-docker
 
 This container is built automatically whenever code is pushed to master at https://github.com/Motion-Project/motion .
