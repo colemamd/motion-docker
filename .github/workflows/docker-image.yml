@@ -24,4 +24,4 @@ jobs:
         buildx-version: latest
         qemu-version: latest
     - name: Build the Docker image
-      run: docker buildx build .  --file Dockerfile --tag colemamd/motion-docker:latest --platform linux/arm/v6,linux/arm/v7,linux/arm64,linux/amd64
+      run: docker buildx build .  --file Dockerfile --tag colemamd/motion-docker:latest --platform linux/arm/v7,linux/arm64,linux/amd64
