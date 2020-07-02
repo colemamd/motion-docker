@@ -5,6 +5,8 @@ The motion.conf file establishes global parameters that apply to all cameras and
 
 The original README is quoted below. For this build, replace motionproject/motion:latest with colemamd/motion-docker:latest.
 
+![Docker Image CI](https://github.com/colemamd/motion-docker/workflows/Docker%20Image%20CI/badge.svg?branch=master)
+
 # motion-docker
 
 This container is built automatically whenever code is pushed to master at https://github.com/Motion-Project/motion .
