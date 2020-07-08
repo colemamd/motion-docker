@@ -23,7 +23,6 @@ jobs:
       with:
         buildx-version: latest
         qemu-version: latest
-      run: echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}"
     - name: Build the Docker image
       run: docker buildx build .  --file Dockerfile --tag colemamd/motion-docker:latest --platform linux/arm/v7,linux/arm64,linux/amd64 --output "type=image,push=false"
     - name: Publish to Docker
