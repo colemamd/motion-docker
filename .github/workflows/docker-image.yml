@@ -31,4 +31,4 @@ jobs:
         username: ${{ secrets.DOCKER_LOGIN }}
         password: ${{ secrets.DOCKER_PASS }}
         repository: colemamd/motion-docker
-        tag: 0.5
+        tag: 0.6
